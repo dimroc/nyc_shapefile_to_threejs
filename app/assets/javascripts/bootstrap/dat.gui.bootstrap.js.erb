@@ -1,0 +1,31 @@
+$(function() {
+  var navigateToRegions = function() {
+    App.instance.navigate('/regions')
+  };
+
+  App.World.bind('loaded', function() {
+    var gui = new dat.GUI({autoPlace: false});
+    gui.closed = true;
+
+    var debugController = gui.add(Env, "debug");
+    debugController.onChange(function(value) {
+      if(!value) {
+        $(".debug").fadeOut();
+      } else {
+        $(".debug").fadeIn();
+      }
+    });
+
+    var wireframeController = gui.add(Env, "wireframe");
+    wireframeController.onChange(function(value) {
+      getHook().reloadRegions();
+    });
+
+    var customContainer = $('#datgui');
+    customContainer.append(gui.domElement);
+
+    <% if Rails.env.production? %>
+        <%= "gui.domElement.hidden = true;" %>
+    <% end %>
+  });
+});

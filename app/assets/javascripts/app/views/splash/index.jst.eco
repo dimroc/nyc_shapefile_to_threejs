@@ -1,0 +1,23 @@
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <table>
+        <tbody>
+
+          <tr>
+            <td class="nyc icon centered"> 
+              <img src="/assets/icons/nyc.png" alt="All">
+              <img src="/assets/loading.gif">
+            </td>
+
+            <% for regionName in @regionNames: %>
+              <td class="<%= regionName %> icon centered">
+                <img src="<%= "/assets/icons/#{regionName}.png" %>" alt="<%= regionName %>">
+              </td>
+            <% end %>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
