@@ -17,7 +17,7 @@ class App.CameraControls
     @minDistance = 5.0
     @maxDistance = 300.0
 
-    @eye = new THREE.Vector3(0, 0, 100)
+    @eye = new THREE.Vector3(0, 0, 300)
     @target = new THREE.Vector3()
 
     @zoomStart = @zoomEnd = 0.0

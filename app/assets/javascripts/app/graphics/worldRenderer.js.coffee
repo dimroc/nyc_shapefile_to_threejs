@@ -121,6 +121,7 @@ createOrthographicCamera = (options) ->
 
 createPerspectiveCamera = (options) ->
   camera = new THREE.PerspectiveCamera( options.fov, options.width / options.height, 1, 1000 )
+  camera.position = new THREE.Vector3(0, 0, 200)
   camera
 
 createRenderer = (options) ->
