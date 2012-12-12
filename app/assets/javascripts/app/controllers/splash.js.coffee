@@ -27,4 +27,5 @@ class App.Controller.Splash extends Spine.Controller
     @el.empty()
 
   _loadCallback: =>
+    console.log("Regions fully loaded")
     @navigate '/boroughs'
