@@ -1,8 +1,3 @@
-Project: New Block City
-=======================
+Render New York City as a mesh based off of nyc.gov shapefiles
 
-WebGL representation of New York City using a collection
-of cubes to represent a particular borough.
-
-Leverages PostGIS to read shapefiles and then generate geographically
-accurate blocks to be rendered by the front-end using SpineJS and WebGL.
+Extracted from a separate more ambitious project, New Block City.
