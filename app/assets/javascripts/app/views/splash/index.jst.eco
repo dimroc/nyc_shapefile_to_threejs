@@ -6,13 +6,13 @@
 
           <tr>
             <td class="nyc icon centered"> 
-              <img src="/assets/icons/nyc.png" alt="All">
-              <img src="/assets/loading.gif">
+              <img src="public/assets/icons/nyc.png" alt="All">
+              <img src="public/assets/loading.gif">
             </td>
 
             <% for regionName in @regionNames: %>
               <td class="<%= regionName %> icon centered">
-                <img src="<%= "/assets/icons/#{regionName}.png" %>" alt="<%= regionName %>">
+                <img src="<%= "public/assets/icons/#{regionName}.png" %>" alt="<%= regionName %>">
               </td>
             <% end %>
           </tr>

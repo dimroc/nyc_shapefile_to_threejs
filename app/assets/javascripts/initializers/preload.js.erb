@@ -1,12 +1,12 @@
 icon_paths = [
-  "<%= image_path("loading.gif") %>",
+  "public/assets/loading.gif",
 
   <% World.select(:slug).map(&:slug).each do |slug| %>
-  "<%= image_path("icons/#{slug}.png") %>",
+  "<%= "public/assets/icons/#{slug}.png" %>",
   <% end %>
 
   <% Region.select(:slug).map(&:slug).each do |slug| %>
-  "<%= image_path("icons/#{slug}.png") %>",
+  "<%= "public/assets/icons/#{slug}.png" %>",
   <% end %>
 ]
 

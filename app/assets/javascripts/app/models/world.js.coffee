@@ -44,10 +44,10 @@ class App.World extends App.Model
     @appendErrors(slug: "slug is required") unless @slug
 
   iconPath: ->
-    "/assets/icons/#{_(@name).underscored()}.png"
+    "public/assets/icons/#{_(@name).underscored()}.png"
 
   fetchRegions: (successCallback)->
-    url = "/static/#{@slug}/regions.json"
+    url = "public/static/#{@slug}/regions.json"
     $.ajax(
       type: "GET",
       url: url,

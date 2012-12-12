@@ -1,7 +1,7 @@
 class App.Region extends App.Model
   @configure 'Region', 'id', 'name', 'slug', 'current'
   @extend Spine.Model.Ajax
-  @url: "#{Constants.apiBasePath}/regions"
+  @url: "#{Constants.apiBasePath}/regions.json"
 
   validate: ->
     @errors = {}
@@ -9,7 +9,7 @@ class App.Region extends App.Model
     @appendErrors(slug: "slug is required") unless @slug
 
   iconPath: ->
-    "/assets/icons/#{@slug}.png"
+    "public/assets/icons/#{@slug}.png"
 
   neighborhoodNames: ->
     _(@neighborhoods).map((neighborhood)-> neighborhood.name)

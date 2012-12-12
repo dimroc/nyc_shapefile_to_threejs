@@ -8,7 +8,7 @@
       <tr>
         <% for regionName in @regionNames: %>
           <td class="<%= regionName %> icon centered">
-            <img src="<%= "/assets/icons/#{regionName}.png" %>" alt="<%= regionName %>">
+            <img src="<%= "public/assets/icons/#{regionName}.png" %>" alt="<%= regionName %>">
           </td>
         <% end %>
       </tr>
