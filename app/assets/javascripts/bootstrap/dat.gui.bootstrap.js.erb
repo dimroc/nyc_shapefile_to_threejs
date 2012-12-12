@@ -5,7 +5,6 @@ $(function() {
 
   App.World.bind('loaded', function() {
     var gui = new dat.GUI({autoPlace: true});
-    gui.closed = true;
 
     var debugController = gui.add(Env, "debug");
     debugController.onChange(function(value) {

@@ -25,7 +25,7 @@ createStats = ->
 
   stats.domElement.style.position = "absolute"
   stats.domElement.style.top = "50px"
-  stats.domElement.style.left = "0"
+  stats.domElement.style.left = "15px"
 
   stats.domElement.children[ 0 ].children[ 0 ].style.color = "#aaa"
   stats.domElement.children[ 0 ].style.background = "transparent"
